@@ -61,13 +61,13 @@ fs.readFile(filename, 'utf8', function(err, data) {
     Object.entries(seasonCount).sort(([,x],[,y]) => y-x)
   );
 
-console.log(sortedSeasonCount);
-console.log(sortedStateCount);
-console.log('\n')
+  console.log(sortedSeasonCount);
+  console.log(sortedStateCount);
+  console.log('\n')
 
-console.log(`Sighting count: ${sightingsCount}`);
-console.log(`Most common season: ${Object.keys(sortedSeasonCount)[0]}`);
-console.log(`Most common state: ${Object.keys(sortedStateCount)[0]}`);
+  console.log(`Sighting count: ${sightingsCount}`);
+  console.log(`Most common season: ${Object.keys(sortedSeasonCount)[0]}`);
+  console.log(`Most common state: ${Object.keys(sortedStateCount)[0]}`);
 });
 
 }
